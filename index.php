@@ -1,7 +1,7 @@
 <?php
-    include("config.php");
+    include("config.php");                     //llamamos al archivo config.php ya que tiene la variable $msqli
     $sql = "SELECT * FROM clients";
-    $query = mysqli_query($mysqli, $sql);
+    $query = mysqli_query($mysqli, $sql);       //asignamos la variable $query con la funcion mysqli_query
 ?>
 
 <!DOCTYPE html>
@@ -33,7 +33,7 @@
     <br>
     <h2>Usuarios registrados</h2>
     <br>
-    <table>
+    <table>                     <!--creamos la tabla para mostrar los clientes creados-->
         <thead>
             <tr>
                 <th>ID</th>
